@@ -81,11 +81,27 @@ img {
 	max-width: 1085px;
 	padding: 0 20px;
 	margin: 0 auto;
+	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg");
+	background-repeat: no-repeat;
+	background-size: 850px 768px;
+	background-position: 370px -20px;
 }
-/*--------------bg--------------*/
+@media (max-width: 768px) {
+	.wrap{
+		background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg");
+		background-size: 334px 244px;
+		background-position: 275px 175px;
+	}
+}
+@media (max-width: 375px) {
+	.wrap{
 
+		background-size: 334px 244px;
+		background-position: 20px 384px;
+	}
+}
 
-/*----header----*/
+/*---------header---------*/
 .header{
 	display: flex;
 	justify-content: space-between;
@@ -123,21 +139,20 @@ img {
 	margin-top: 30px;
 	margin-bottom: 217px;
 	position: relative;
-
-	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg");
+	/* background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg");
 	background-repeat: no-repeat;
 	background-size: 768px 580px;
-	background-position: 374px -20px;
+	background-position: 374px -20px; */
 
 }
-.bg{
+/* .bg{
 	position: absolute;
 	background-color: #fff;
 
 	width: 851px;
 	top: -200px;
 
-}
+} */
 .txt_L{
 	width: 47%;
 }
@@ -540,20 +555,37 @@ img {
 .title_stars{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: center;
 	margin-top: 8px;
 }
-.title_stars p{
+.title_stars .title_text{
 	font-size: 16px;
-	line-height: 24px;
+	margin: 0px;
 }
 .stars{
+	flex:1;
 	display: flex;
 }
-.stars img{
-	vertical-align: center;
-	margin-left: 8.22px;
+
+.stars .stars_pic{
+	display: block;
+	position: relative;
+	margin: 0px;
+	top: unset;
+	left: unset;
+	/* vertical-align: center; */
+	/* margin-left: 8.22px; */
+}
+
+.stars .stars_pic {
+	margin-left: 10px;
+}
+
+.stars .stars_pic:first-child {
+	margin-left: auto;
+	/* vertical-align: center; */
+	/* margin-left: 8.22px; */
 }
 .slider {
 	display: flex;
@@ -607,7 +639,7 @@ img {
 	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: cover;
+
 
 	height: 503px;
 	width: 100%;
