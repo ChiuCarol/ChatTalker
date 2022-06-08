@@ -685,7 +685,7 @@ img {
 	line-height: 46px;
 	font-weight: bold;
 	text-align: center;
-	margin-bottom: 48px;
+	margin-top: 260px;
 }
 .footer_banner a{
 	margin-bottom: 100px;
@@ -694,5 +694,10 @@ img {
 	.footer_banner{
 		background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/footer_sm.svg");
 		height: 461px;
+	}
+	.footer_banner h2{
+		font-size: 24px;
+		line-height: 35px;
+		margin-top: 293px;
 	}
 }
