@@ -531,7 +531,7 @@ img {
 	border-radius: 12px;
 	padding: 24px 32px;
 	box-shadow: 0px 2px 10px #00000014;
-	margin-bottom: 80px;
+	margin-bottom: 100px;
 }
 .personpic{
 	max-width: 80px;
@@ -566,6 +566,7 @@ img {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 8px;
+	flex-wrap: wrap;
 }
 .title_stars p{
 	font-size: 16px;
@@ -649,7 +650,7 @@ img {
 	}
 	.feedback_01 {
 	  width: 100%;
-	  margin-bottom: 40px;
+
 	}
 
   }
