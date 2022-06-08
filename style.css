@@ -553,13 +553,7 @@ img {
 	margin-top: 24px;
 	font-weight: bold;
 }
-.title_stars{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 8px;
-}
+
 .title_stars{
 	display: flex;
 	flex-direction: row;
@@ -574,6 +568,7 @@ img {
 }
 .stars{
 	display: flex;
+	flex-wrap: wrap;
 }
 .stars img{
 	vertical-align: center;
@@ -646,11 +641,14 @@ img {
   }
 @media (max-width: 576px) {
 	.feedback_items {
-	  flex-direction: column;
+	  	flex-direction: column;
 	}
 	.feedback_01 {
-	  width: 100%;
+	  	width: 100%;
 
+	}
+	.title_stars{
+		flex-direction: column;
 	}
 
   }
