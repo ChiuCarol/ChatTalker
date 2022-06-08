@@ -693,6 +693,7 @@ img {
 @media(max-width:375px){
 	.footer_banner{
 		background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/footer_sm.svg");
+		background-size: 375px 461px;
 		height: 461px;
 	}
 	.footer_banner h2{
